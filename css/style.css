@@ -6,10 +6,54 @@ body{
 }
 .box{
     width: 300px;
-    height: 40px;
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: yellow;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    text-align: center;
 
+}
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"], .box input[type="password"] {
+    display: block;
+    margin: 20px auto;
+    background: none;
+    border: 2px solid lightblue;
+    text-align: center;
+    color: white;
+    padding: 14px 10px;
+    outline: none;
+    border-radius: 24px;
+    //transition: 0.25s;
+
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+    width: 280px;
+    border: 2px solid lightgreen;
+
+
+}
+.box input[type="submit"] {
+    border:2px solid lightgreen;
+    border-radius: 24px;
+    background: none;
+    color: white;
+    padding: 14px 40px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+
+}
+.box input[type="submit"]:hover {
+    background: limegreen;
 }
